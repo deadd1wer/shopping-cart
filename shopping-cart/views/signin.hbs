@@ -1,0 +1,22 @@
+<div class="login-section">
+    <div class="login-block">
+        <h3 class="login-heading">Sign In</h3><a class="facebook-btn w-button" href="#">log in with facebook</a><a class="log-reg-social w-button" href="#">Google +</a><a class="log-reg-social twitter w-button" href="#">Twitter</a>
+        <div class="login-form-wrapper w-form">
+            <form action="/profile" method="get" id="email-form" name="email-form">
+                <input class="w-input" data-name="Email" id="Email" maxlength="256" name="Email" placeholder="Enter your email please" required="required" type="email">
+                <input class="w-input" id="Password" maxlength="256" name="field" placeholder="Password" required="required" type="password">
+                <input type="hidden" name="_csrf" value="{{ csrfToken }}">
+                <input class="submit-button w-button" data-wait="Please wait..." type="submit" value="Submit">
+            </form>
+            <div class="w-form-done">
+                <div>Thank you! Your submission has been received!</div>
+            </div>
+        </div>
+        <div class="div-block">
+            <div class="simple-txt">interested in selling?</div><a class="join-us" href="#">Get Started</a>
+        </div>
+        <div class="invitation-block">
+            <div class="simple-txt">First time here?</div><a class="join-us" href="#">Join Us</a>
+        </div>
+    </div>
+</div>

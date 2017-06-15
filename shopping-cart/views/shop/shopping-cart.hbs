@@ -1,0 +1,60 @@
+{{# if products}}
+    <div class="section">
+        <div class="container">
+            <h4 class="page-name-h4">CART</h4>
+            <div class="cart product-price">Total: {{totalPrice}}$</div>
+        </div>
+        <div class="cart-page container">
+            <div class="cart-items">
+                {{# each products}}
+                    <div class="cart-page simple-txt"><span class="items-number-in-the-cart">{{this.item.title}}</span></div>
+                    <div class="cart-item">
+                        <a class="cart-img-link-block w-inline-block" href="#"><img class="cart-product-img" src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg">
+                        </a>
+                        <div class="cart-product-desc-block">
+                            <h4 class="heading-3">{{this.item.title}}</h4>
+                            <div class="sold-by-cart-text">Sold by <a class="cart-store-link">Store name</a>
+                            </div><a class="cart-store-link" href="#">Save for later</a><a class="cart-store-link" href="#">Remove</a>
+                        </div>
+                        <div class="cart-info">
+                            <div class="cart product-price">{{this.price}}$</div>
+                        </div>
+                    </div>
+
+                {{/each}}
+            </div>
+            <a type="button" class="reg-button w-button" href="/checkout">Checkout</a>
+        </div>
+    </div>
+    {{else}}
+    <div class="empty-card-block"><img class="empty-card-img" height="160" src="images/online-shopping-cart.svg" width="160">
+        <h4 class="heading-empty-cart">Your cart is currently empty</h4>
+        <div class="empty-cart-page simple-txt">Browse the shop to find popular sale items</div><a class="reg-button w-button" href="/">Shop</a>
+    </div>
+{{/if}}
+
+<div class="footer-section">
+    <div class="container footer">
+        <div class="footer-top-block"><a class="footer-logo" href="#">LOGO</a>
+            <div class="social-btns-block">
+                <a class="social-icon-block w-inline-block" href="#"><img class="social-network-icon" src="images/facebook-logo.svg">
+                </a>
+                <a class="social-icon-block w-inline-block" href="#"><img class="social-network-icon" src="images/instagram-logo.svg">
+                </a>
+                <a class="social-icon-block w-inline-block" href="#"><img class="social-network-icon" src="images/twitter.svg">
+                </a>
+            </div>
+        </div>
+        <div class="footer-menu-block"><a class="footer-link-nav" href="#">About</a><a class="footer-link-nav" href="#">Carieers</a><a class="footer-link-nav" href="#">Culture</a><a class="footer-link-nav" href="#">Business</a><a class="footer-link-nav" href="#">Blog</a><a class="footer-link-nav" href="#">Contacts</a>
+        </div>
+        <div class="_2 footer-menu-block">
+            <div class="footer-left-block">
+                <h3 class="heading">BUSINESS</h3><a class="footer-buisness-link" href="#">add your business</a><a class="footer-buisness-link" href="#">guidelines</a><a class="footer-buisness-link" href="#">advertise</a><a class="footer-buisness-link" href="#">guidelines</a><a class="footer-buisness-link" href="#">book</a><a class="footer-buisness-link" href="#">order</a>
+            </div>
+            <div class="footer-right-block"></div>
+        </div>
+        <div class="credintials footer-menu-block"><a class="footer-link-nav" href="#">Privacy</a><a class="footer-link-nav" href="#">Feedback</a><a class="footer-link-nav" href="#">Terms of reference</a><a class="footer-link-nav" href="#">Security</a><a class="footer-link-nav" href="#">Sitemap</a>
+        </div>
+    </div>
+    <div class="text-block-3">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. © 2016-2017 - BRAND NAME™. All rights reserved.</div>
+</div>
